@@ -4,12 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 
 
-import javax.annotation.processing.Generated;
 
 @Entity
-//@Data
-@Setter
-@Getter
+@Data
 @Table(name = "posts")
 @AllArgsConstructor
 @NoArgsConstructor

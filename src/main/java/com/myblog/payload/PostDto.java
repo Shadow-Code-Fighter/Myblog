@@ -2,8 +2,7 @@ package com.myblog.payload;
 
 import lombok.*;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class PostDto {
