@@ -2,7 +2,7 @@ package com.myblog.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-
+import java.util.List;
 
 
 @Entity
@@ -17,4 +17,8 @@ public class Post {
     private String title;
     private String description;
     private String content;
+
+//    One post can have many comments
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "post")
+    private List<Comment> comments;
 }
